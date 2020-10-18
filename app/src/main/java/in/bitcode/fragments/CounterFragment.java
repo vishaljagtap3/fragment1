@@ -70,6 +70,15 @@ public class CounterFragment extends Fragment {
             mCount = 0;
         }
     }
+
+    public void reset(){
+        reset(0);
+    }
+
+    public void reset(int count) {
+        mCount = count;
+        mTxtCount.setText(mCount + "");
+    }
 }
 
 

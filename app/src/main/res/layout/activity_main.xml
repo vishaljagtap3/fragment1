@@ -7,8 +7,20 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/edtCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnResetCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset Count" />
+
     <fragment
         android:id="@+id/counterFragment1"
+        android:tag="myFragment1"
         android:name="in.bitcode.fragments.CounterFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
